@@ -1,0 +1,212 @@
+/* Basic Reset and Styling */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; /* More modern font stack */
+    background-color: #121212; /* Darker background for better contrast */
+    color: #ffffff;
+    display: flex; /* Center the content */
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+  }
+  
+  /* Main Container */
+  .container {
+    background-color: #1e1e1e;
+    border-radius: 10px; /* Rounded corners */
+    padding: 30px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+    width: 400px;
+  }
+  
+  /* Heading */
+  h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #4a90e2; /* Blue accent */
+  }
+  
+  /* Input Fields */
+  .input-field {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 15px;
+  }
+  
+  label {
+    font-weight: bold;
+    margin-bottom: 5px;
+  }
+  
+  .input {
+    padding: 10px;
+    border: 1px solid #333;
+    border-radius: 5px;
+    background-color: #282828;
+    color: white;
+  }
+  
+  .button {
+    background-color: #4a90e2;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    width: calc(50% - 10px); /* Make buttons 50% width with 10px gap */
+    margin: auto; /* Center the buttons */
+    margin-bottom: 10px; /* Add margin-bottom for gap */
+}
+
+  .button:hover {
+    background-color: #357bd8;
+  }
+  
+/* For .container */
+.join-buttons {
+    display: flex; /* Change from flex-direction: column to flex */
+    justify-content: space-between;
+    flex-wrap: wrap; /* Allow wrapping if buttons exceed container width */
+}
+
+/* For .button and .create-btn */
+.button, .create-btn {
+    width: calc(50% - 10px); /* Adjust button widths for spacing */
+    margin-bottom: 0; /* Remove margin-bottom to avoid extra space */
+}
+
+  
+  /* Error Message */
+  .error-message {
+    color: red;
+    text-align: center;
+    margin-top: 10px;
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 500px) {
+    .container {
+      width: 90%;
+    }
+  
+    .join-buttons {
+      flex-direction: column; /* Stack buttons vertically on smaller screens */
+    }
+  
+    .join-buttons .button {
+      width: 100%;
+      margin-bottom: 10px;
+    }
+  }
+  
+
+
+.homeInp {
+    width: 100%; /* Full width */
+    border: 1px solid #333333; /* Dark border */
+    border-radius: 8px; /* Rounded corners */
+    padding: 12px; /* Padding */
+    background-color: #282828; /* Dark background */
+    color: #ffffff; /* White text */
+    margin-top: 15px; /* Space between inputs */
+}
+
+.create-btn {
+    background-color: #4a90e2;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    width: calc(50% - 10px); /* Make buttons 50% width with 10px gap */
+    margin: auto; /* Center the buttons */
+    margin-bottom: 10px; /* Add margin-bottom for gap */
+    margin-left: 15px; /* Add margin-left for gap */
+    margin-top: 15px; /* Add margin-top for gap */
+}
+
+.create-btn:hover {
+    background-color: #357bd8; /* Darker blue on hover for subtle effect */
+}
+
+.message-box {
+    border: 2px solid #333333; /* Darker border for contrast */
+    border-radius: 15px; /* Rounded corners for a softer appearance */
+    background-color: #282828; /* Darker background for contrast */
+    height: 80vh;
+    display: flex;
+    flex-direction: column;
+    width: 80vw;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3); /* Shadow for depth */
+    
+}
+
+.messages {
+    overflow-y: scroll;
+    flex: 1;
+    padding: 15px;
+    width: 100%;
+}
+
+.inputs {
+    padding: 15px;
+    display: flex;
+    align-items: center;
+    background-color: #1e1e1e;
+    width: 100%;
+    border-radius: 0 0 15px 15px;
+}
+
+#message {
+    flex: 1;
+    border: 1px solid #333333;
+    border-radius: 8px;
+    padding: 12px;
+    background-color: #282828;
+    color: #ffffff;
+    width: 100%;
+}
+
+#send-btn {
+    background-color: #4a90e2;
+    color: #ffffff;
+    border: none;
+    padding: 12px 20px;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin-left: 10px;
+}
+
+#send-btn:hover {
+    background-color: #357bd8;
+}
+
+.text {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    padding: 12px;
+}
+
+.muted {
+    font-size: 14px; /* Slightly larger font size for better readability */
+    color: #999999; /* Lighter color for muted text */
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    .message-box {
+        width: 90vw;
+    }
+}
